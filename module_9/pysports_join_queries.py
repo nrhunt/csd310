@@ -1,7 +1,5 @@
 import mysql.connector
 from mysql.connector import errorcode
-
-""" database config object """
 config = {
     "user": "pysports_user",
     "password": "MySQL8IsGreat!",
@@ -12,7 +10,7 @@ config = {
 
 try:
 
-    db = mysql.connector.connect(**config) # connect to the pysports database 
+    db = mysql.connector.connect(**config)
 
     cursor = db.cursor()
 
